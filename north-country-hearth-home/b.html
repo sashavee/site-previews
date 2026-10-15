@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>North Country Hearth &amp; Home · North Country</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--navy:#111c27;--navy2:#172433;--ivory:#efe9de;--muted:#9aa3ad;--brass:#c3a46c;--line:rgba(239,233,222,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--navy);color:var(--ivory);font-family:Inter,system-ui,sans-serif;font-size:16.5px;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1260px;margin:0 auto;padding:0 32px}
+.ribbon{background:#000;color:#8b939c;font-size:12px;text-align:center;padding:8px 16px}
+.ribbon b{color:#fff}
+.caps{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:600}
+header{position:absolute;left:0;right:0;z-index:20}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:96px}
+.logo{display:flex;align-items:center;gap:14px}
+.logo .mark{width:46px;height:46px;border:1px solid var(--brass);display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--brass)}
+.logo b{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:24px;letter-spacing:.04em;display:block;line-height:1}
+.logo small{font-size:10px;letter-spacing:.3em;color:var(--muted)}
+nav{display:flex;gap:36px;font-size:14px;color:#cfd4d9}
+nav a:hover{color:var(--brass)}
+.btn{display:inline-flex;gap:10px;align-items:center;background:var(--brass);color:var(--navy);padding:15px 28px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;transition:background .3s}
+.btn:hover{background:var(--ivory)}
+.btn.line{background:transparent;color:var(--ivory);border:1px solid rgba(239,233,222,.5)}
+.btn.line:hover{border-color:var(--brass);color:var(--brass)}
+.hero{position:relative;height:min(100vh,900px);min-height:640px;display:flex;align-items:flex-end;padding-bottom:110px}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:80% 40%}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(17,28,39,.95) 0%,rgba(17,28,39,.82) 42%,rgba(17,28,39,.25) 75%,rgba(17,28,39,.05) 100%),linear-gradient(0deg,rgba(17,28,39,.8),transparent 40%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero .caps{color:var(--brass);margin-bottom:24px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(54px,7.4vw,108px);line-height:.95;max-width:11ch}
+h1 em{color:var(--brass)}
+.hero p{max-width:32em;color:#cfd4d9;font-size:18px;margin:24px 0 36px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.strip{background:var(--navy2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.strip div div{padding:34px 20px;border-right:1px solid var(--line)}
+.strip .wrap > div{padding:34px 24px;border-right:1px solid var(--line)}
+.strip .wrap > div:last-child{border-right:0}
+.strip b{display:block;font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:500;color:var(--brass);line-height:1.1}
+.strip span{color:var(--muted);font-size:14px}
+section{padding:130px 0}
+h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(40px,4.8vw,70px);line-height:1}
+h2 em{color:var(--brass)}
+.process{display:grid;grid-template-columns:1fr 1.4fr;gap:90px}
+.process p.lead{color:var(--muted);font-size:18px;margin-top:24px}
+.steps{border-top:1px solid var(--line)}
+.steps div{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:30px 0;border-bottom:1px solid var(--line)}
+.steps b{font-family:"Cormorant Garamond",serif;font-size:40px;color:var(--brass);font-weight:500;line-height:1}
+.steps h3{font-size:19px;font-weight:600;margin-bottom:4px}
+.steps p{color:var(--muted)}
+.types{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:300px 300px;gap:14px;margin-top:56px}
+.types figure{position:relative;overflow:hidden}
+.types figure:first-child{grid-row:span 2}
+.types img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.types figure:hover img{transform:scale(1.05)}
+.types figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px;background:linear-gradient(0deg,rgba(17,28,39,.9),transparent)}
+.types figcaption b{font-family:"Cormorant Garamond",serif;font-size:30px;font-weight:500;display:block}
+.types figcaption span{color:#cfd4d9;font-size:14px}
+.tour{background:var(--ivory);color:var(--navy)}
+.tour .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.tour p{color:#4c5864;font-size:18px;margin:22px 0 34px}
+.tour .btn{background:var(--navy);color:var(--ivory)}
+.tour .btn:hover{background:var(--brass);color:var(--navy)}
+.tour img{width:100%;aspect-ratio:5/4;object-fit:cover}
+.area{text-align:center}
+.area .towns{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:40px auto 0;max-width:900px}
+.area .towns span{border:1px solid var(--line);padding:8px 16px;font-size:14px;color:#cfd4d9}
+.final{border-top:1px solid var(--line);text-align:center}
+.final p{color:var(--muted);margin:22px 0 36px}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.callbar{display:none}
+@media (max-width:900px){
+ nav,header .btn{display:none}
+ .wrap{padding:0 20px}
+ .strip .wrap{grid-template-columns:1fr 1fr}
+ .strip .wrap > div{border-bottom:1px solid var(--line)}
+ .process,.tour .wrap{grid-template-columns:1fr;gap:40px}
+ .types{grid-template-columns:1fr;grid-template-rows:none}
+ .types figure{height:280px}
+ .types figure:first-child{grid-row:auto}
+ section{padding:84px 0}
+ .callbar{display:flex;position:fixed;left:16px;right:16px;bottom:16px;justify-content:center;z-index:30;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+ footer{padding-bottom:110px}
+}
+
+</style>
+</head>
+<body>
+<div class="ribbon"><b>Concept preview</b> for North Country Hearth &amp; Home by Aleksandra Vukkert · not affiliated · not live</div>
+
+<header><div class="wrap">
+ <a class="logo" href="#top"><span class="mark">NCHH</span><span><b>North Country Hearth &amp; Home</b><small>FIREPLACES, POOLS &amp; OUTDOOR LIVING</small></span></a>
+ <nav><a href="#process">Process</a><a href="#build">Our expertise</a><a href="#feature">Water Testing</a><a href="#area">Service area</a></nav>
+ <a class="btn" href="tel:"></a>
+</div></header>
+<main id="top">
+ <div class="hero"><img src="hero.jpg" alt=""><div class="wrap">
+  <div class="caps">Locally owned &amp; operated in Watertown, NY</div>
+  <h1>Spaces built <em>for connection.</em></h1>
+  <p>A family-owned business providing quality hearth, pool, spa, sauna, and outdoor living products with complete support from design to maintenance.</p>
+  <div class="ctas"><a class="btn" href="#final">Start your project</a><a class="btn line" href="#feature">Learn more</a></div>
+ </div></div>
+ <div class="strip"><div class="wrap"><div><b>Family-owned</b><span>Locally operated in Watertown, NY</span></div><div><b>Certified</b><span>Technicians with ongoing training</span></div><div><b>Full-service</b><span>From design and selection to installation</span></div><div><b>Ongoing</b><span>Maintenance, repairs, and seasonal support</span></div></div></div>
+ <section id="process"><div class="wrap process">
+  <div><div class="caps" style="color:var(--brass)">How it works</div><h2 style="margin-top:16px">Your project, <em>simplified.</em></h2><p class="lead">We guide you through every phase of your home or backyard improvement to ensure a seamless experience.</p></div>
+  <div class="steps"><div><b>01</b><span><h3>Consultation &amp; Planning</h3><p>We learn about your goals, space, and project needs.</p></span></div><div><b>02</b><span><h3>Product Selection</h3><p>Choose from quality products backed by expert guidance.</p></span></div><div><b>03</b><span><h3>Professional Installation</h3><p>Our experienced team ensures proper installation and setup.</p></span></div><div><b>04</b><span><h3>Ongoing Support</h3><p>Maintenance, repairs, and seasonal service protect your investment.</p></span></div></div>
+ </div></section>
+ <section id="build" style="padding-top:0"><div class="wrap">
+  <div class="caps" style="color:var(--brass)">Our expertise</div>
+  <h2 style="margin-top:16px">Home warmth &amp; <em>backyard retreats</em></h2>
+  <div class="types">
+   <figure><img src="s1.jpg" alt=""><figcaption><b>Heating &amp; Hearth</b><span>Gas, wood, pellet, and electric fireplaces and stoves, including...</span></figcaption></figure><figure><img src="s2.jpg" alt=""><figcaption><b>Pools &amp; Spas</b><span>In-ground and above-ground pools, hot tubs, saunas, and seasonal...</span></figcaption></figure><figure><img src="s3.jpg" alt=""><figcaption><b>Outdoor Living</b><span>Outdoor kitchens, premium grills, fire tables, custom lighting,...</span></figcaption></figure>
+   <figure style="grid-column:span 2"><img src="wide.jpg" alt=""><figcaption><b>Showroom</b><span>Explore products for every season</span></figcaption></figure>
+  </div>
+ </div></section>
+ <section id="feature" class="tour"><div class="wrap">
+  <img src="feature.jpg" alt="">
+  <div><div class="caps" style="color:#8a6d3b">Water Care</div><h2 style="margin-top:16px">Free water testing available.</h2><p>Bring your pool or spa water sample into our showroom and receive complimentary testing and personalized recommendations.</p><a class="btn" href="#final">Learn more</a></div>
+ </div></section>
+ <section id="area" class="area"><div class="wrap">
+  <div class="caps" style="color:var(--brass)">Where we work</div>
+  <h2 style="margin-top:16px">Proudly serving the North Country.</h2>
+  <div class="towns"><span>Watertown</span><span>Alexandria Bay</span><span>Black River</span><span>Cape Vincent</span><span>Carthage</span><span>Clayton</span><span>Copenhagen</span><span>Evans Mills</span><span>Fort Drum</span><span>Gouverneur</span><span>LaFargeville</span><span>Lowville</span><span>Sackets Harbor</span><span>Theresa</span></div>
+ </div></section>
+ <section id="final" class="final"><div class="wrap">
+  <h2>Ready to transform your space?<br><em>Let's talk.</em></h2>
+  <p>Whether you are dreaming of a new pool or a cozy fireplace, we are here to help.</p>
+  <a class="btn" href="tel:">Call </a>
+ </div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 North Country Hearth &amp; Home</span><span>Concept by Aleksandra Vukkert</span></div></footer>
+<a class="btn callbar" href="tel:">Call </a>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
