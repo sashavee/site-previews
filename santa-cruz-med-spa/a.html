@@ -54,7 +54,7 @@ h2 em{font-style:italic;color:var(--gold)}
 .welcome p{color:var(--muted);margin:28px 0 36px;font-size:18px;max-width:34em}
 .menu-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:64px}
 .menu-head p{color:var(--muted);max-width:28em}
-.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line)}
+.menu{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:2px;background:var(--line)}
 .menu article{background:var(--bg);position:relative}
 .menu .pic{aspect-ratio:3/4;overflow:hidden}
 .menu .pic img{width:100%;height:100%;object-fit:cover;filter:brightness(.8);transition:transform 1.2s,filter .6s}
@@ -72,7 +72,7 @@ h2 em{font-style:italic;color:var(--gold)}
 .facts div:last-child{border-right:0}
 .facts b{display:block;font-family:"Cormorant Garamond",serif;font-weight:400;font-size:44px;color:var(--gold);line-height:1.1}
 .facts span{color:var(--muted);font-size:15px}
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.visit{display:grid;grid-template-columns:repeat(var(--cols,2),1fr);gap:2px;background:var(--line)}
 .visit > div{background:var(--bg);padding:70px 60px}
 .visit .caps{color:var(--gold);margin-bottom:22px}
 .visit h3{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:46px;line-height:1.05;margin-bottom:22px}
@@ -133,7 +133,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </div></section>
 <section id="treatments" style="padding-top:0"><div class="wrap">
  <div class="menu-head reveal"><h2>The <em>menu</em></h2><p>Not sure where to start? We request that you book a free consultation for your initial visit.</p></div>
- <div class="menu" style="grid-template-columns:repeat(3,1fr)">
+ <div class="menu" style="--cols:3">
  <article class="reveal"><div class="pic"><img src="cat1.jpeg" alt=""></div><div class="txt"><div class="caps">I.</div><h3>Injectables</h3><ul><li>BOTOX®</li><li>Dermal Fillers</li><li>Juvederm</li><li>Restylane</li><li>Voluma</li><li>Vollure</li><li>Revanesse</li></ul></div></article><article class="reveal"><div class="pic"><img src="cat2.jpeg" alt=""></div><div class="txt"><div class="caps">II.</div><h3>Laser Treatments</h3><ul><li>Laser Hair Removal</li><li>Laser Skin Tightening</li><li>Photorejuvenation</li><li>Laser Acne Treatment</li><li>Tattoo Removal</li></ul></div></article><article class="reveal"><div class="pic"><img src="cat3.jpeg" alt=""></div><div class="txt"><div class="caps">III.</div><h3>Skin Renewal</h3><ul><li>Micro-needling</li><li>Combination Therapy</li><li>Cosmetic Skin Care</li></ul></div></article>
  </div>
 </div></section>
@@ -141,7 +141,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  <div class="quote">State of the art technology with a gentle touch for natural results.</div>
  <div class="facts"><div><b>Free</b><span>initial consultation</span></div><div><b>Physician</b><span>supervised treatments</span></div><div><b>Since 1999</b><span>our physician has trained in aesthetic medicine</span></div></div>
 </div></section>
-<section id="visit" style="padding:0"><div class="visit" style="grid-template-columns:repeat(1,1fr)">
+<section id="visit" style="padding:0"><div class="visit" style="--cols:1">
 <div class="reveal">
   <div class="caps">Santa Cruz</div>
   <h3>2030 North Pacific Ave, Unit E</h3>

@@ -54,7 +54,7 @@ h2 em{font-style:italic;color:var(--gold)}
 .welcome p{color:var(--muted);margin:28px 0 36px;font-size:18px;max-width:34em}
 .menu-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:64px}
 .menu-head p{color:var(--muted);max-width:28em}
-.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line)}
+.menu{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:2px;background:var(--line)}
 .menu article{background:var(--bg);position:relative}
 .menu .pic{aspect-ratio:3/4;overflow:hidden}
 .menu .pic img{width:100%;height:100%;object-fit:cover;filter:brightness(.8);transition:transform 1.2s,filter .6s}
@@ -72,7 +72,7 @@ h2 em{font-style:italic;color:var(--gold)}
 .facts div:last-child{border-right:0}
 .facts b{display:block;font-family:"Cormorant Garamond",serif;font-weight:400;font-size:44px;color:var(--gold);line-height:1.1}
 .facts span{color:var(--muted);font-size:15px}
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.visit{display:grid;grid-template-columns:repeat(var(--cols,2),1fr);gap:2px;background:var(--line)}
 .visit > div{background:var(--bg);padding:70px 60px}
 .visit .caps{color:var(--gold);margin-bottom:22px}
 .visit h3{font-family:"Cormorant Garamond",serif;font-weight:400;font-size:46px;line-height:1.05;margin-bottom:22px}
@@ -133,7 +133,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </div></section>
 <section id="treatments" style="padding-top:0"><div class="wrap">
  <div class="menu-head reveal"><h2>The <em>menu</em></h2><p>We combine injectables, laser procedures, wellness therapies, and clinical skincare to create cohesive plans for your needs.</p></div>
- <div class="menu" style="grid-template-columns:repeat(3,1fr)">
+ <div class="menu" style="--cols:3">
  <article class="reveal"><div class="pic"><img src="cat1.jpg" alt=""></div><div class="txt"><div class="caps">I.</div><h3>Injectables</h3><ul><li>Botox</li><li>Dysport</li><li>Jeuveau</li><li>Daxxify</li><li>Juvéderm</li><li>Restylane</li><li>Sculptra</li></ul></div></article><article class="reveal"><div class="pic"><img src="cat2.jpg" alt=""></div><div class="txt"><div class="caps">II.</div><h3>Skin &amp; Laser</h3><ul><li>BBL HEROic</li><li>MOXI</li><li>HALO</li><li>HydraFacial MD</li><li>DiamondGlow</li><li>SkinPen Microneedling</li></ul></div></article><article class="reveal"><div class="pic"><img src="cat3.jpg" alt=""></div><div class="txt"><div class="caps">III.</div><h3>Body &amp; Wellness</h3><ul><li>CoolSculpting</li><li>Kybella</li><li>Weight Management</li><li>Hormone Optimization</li><li>Wellness Injectables</li></ul></div></article>
  </div>
 </div></section>
@@ -141,7 +141,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  <div class="quote">Expertise, safety, and exceptional patient outcomes in non-surgical aesthetics.</div>
  <div class="facts"><div><b>115 Years</b><span>combined clinical experience</span></div><div><b>Top 1%</b><span>of practices across the country</span></div><div><b>Since 2011</b><span>serving Milwaukee and the North Shore</span></div></div>
 </div></section>
-<section id="visit" style="padding:0"><div class="visit" style="grid-template-columns:repeat(1,1fr)">
+<section id="visit" style="padding:0"><div class="visit" style="--cols:1">
 <div class="reveal">
   <div class="caps">Mequon · North Shore</div>
   <h3>10404 N Port Washington Road</h3>

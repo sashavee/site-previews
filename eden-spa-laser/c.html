@@ -42,7 +42,7 @@ section{padding:90px 0}
 h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(36px,4vw,56px);line-height:1.05;letter-spacing:-.015em}
 h2 em{color:var(--accent)}
 .sub{color:var(--muted);font-size:18px;margin-top:12px;max-width:34em}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+.cards{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:22px;margin-top:46px}
 .card{border-radius:30px;padding:16px 16px 30px;transition:transform .3s}
 .card:hover{transform:translateY(-6px)}
 .card:nth-child(1){background:var(--rose2)}.card:nth-child(2){background:var(--sage)}.card:nth-child(3){background:var(--sand)}
@@ -100,7 +100,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
  <section id="treatments" style="padding-top:20px">
   <h2>Find your <em>treatment</em></h2>
   <p class="sub">From anti-aging injectables to advanced laser procedures. Complimentary consultations are always available.</p>
-  <div class="cards" style="grid-template-columns:repeat(3,1fr)">
+  <div class="cards" style="--cols:3">
   <div class="card"><img src="cat1.jpg" alt=""><h3>Injectables</h3><div class="tags"><span>Botox</span><span>Dysport</span><span>Juvéderm</span><span>Kybella</span><span>Radiesse</span><span>Restylane Silk</span></div></div><div class="card"><img src="cat2.jpg" alt=""><h3>Skin &amp; Laser</h3><div class="tags"><span>Laser hair removal</span><span>Skin tightening</span><span>Skin rejuvenation</span><span>SkinPen</span><span>Signature Facials</span><span>Acne Treatment Bootcamp</span></div></div><div class="card"><img src="cat3.jpg" alt=""><h3>Body &amp; Wellness</h3><div class="tags"><span>CoolSculpting</span><span>EMSculpt Neo</span><span>Lymphatic drainage massage</span><span>Massage Therapy</span><span>Custom Spray Tanning</span></div></div>
   </div>
  </section>

@@ -42,7 +42,7 @@ section{padding:90px 0}
 h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(36px,4vw,56px);line-height:1.05;letter-spacing:-.015em}
 h2 em{color:var(--accent)}
 .sub{color:var(--muted);font-size:18px;margin-top:12px;max-width:34em}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+.cards{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:22px;margin-top:46px}
 .card{border-radius:30px;padding:16px 16px 30px;transition:transform .3s}
 .card:hover{transform:translateY(-6px)}
 .card:nth-child(1){background:var(--rose2)}.card:nth-child(2){background:var(--sage)}.card:nth-child(3){background:var(--sand)}
@@ -100,7 +100,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
  <section id="treatments" style="padding-top:20px">
   <h2>Find your <em>treatment</em></h2>
   <p class="sub">Not sure where to start? We request that you book a free consultation for your initial visit.</p>
-  <div class="cards" style="grid-template-columns:repeat(3,1fr)">
+  <div class="cards" style="--cols:3">
   <div class="card"><img src="cat1.jpeg" alt=""><h3>Injectables</h3><div class="tags"><span>BOTOX®</span><span>Dermal Fillers</span><span>Juvederm</span><span>Restylane</span><span>Voluma</span><span>Vollure</span><span>Revanesse</span></div></div><div class="card"><img src="cat2.jpeg" alt=""><h3>Laser Treatments</h3><div class="tags"><span>Laser Hair Removal</span><span>Laser Skin Tightening</span><span>Photorejuvenation</span><span>Laser Acne Treatment</span><span>Tattoo Removal</span></div></div><div class="card"><img src="cat3.jpeg" alt=""><h3>Skin Renewal</h3><div class="tags"><span>Micro-needling</span><span>Combination Therapy</span><span>Cosmetic Skin Care</span></div></div>
   </div>
  </section>

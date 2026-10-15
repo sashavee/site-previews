@@ -58,7 +58,7 @@ h2 em{color:var(--gold)}
 .press .grid div:last-child{border-right:0}
 .press b{display:block;font-family:"Bodoni Moda",serif;font-weight:400;font-size:40px}
 .press span{color:var(--muted);font-size:14px}
-.loc{display:grid;grid-template-columns:1fr 1fr 1fr;gap:50px;align-items:start}
+.loc{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:50px;align-items:start}
 .loc .card h3{font-family:"Bodoni Moda",serif;font-weight:400;font-size:30px;margin:12px 0 10px}
 .loc .card p{color:var(--muted);font-size:15.5px}
 .loc .card .btn{margin-top:22px}
@@ -121,7 +121,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
  <div class="caps" style="color:var(--gold)">Why clients choose us</div>
  <div class="grid"><div><b>Complimentary</b><span>consultations</span></div><div><b>Non-surgical</b><span>minimal downtime</span></div><div><b>Metro 50</b><span>Oklahoma City&#39;s fastest-growing companies</span></div></div>
 </div></div>
-<section id="visit"><div class="wrap loc" style="grid-template-columns:1fr 1fr">
+<section id="visit"><div class="wrap loc" style="--cols:2">
  <img src="interior.jpg" alt="">
  <div class="card"><div class="caps" style="color:var(--gold)">Oklahoma City</div><h3>4214 N. Classen Blvd</h3><p>Oklahoma City OK 73118<br>Monday – Friday 9:00-5:00</p><a class="btn" href="tel:+14053514457">(405) 351-4457</a></div>
 </div></section>

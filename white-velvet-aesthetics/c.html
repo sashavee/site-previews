@@ -42,7 +42,7 @@ section{padding:90px 0}
 h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:clamp(36px,4vw,56px);line-height:1.05;letter-spacing:-.015em}
 h2 em{color:var(--accent)}
 .sub{color:var(--muted);font-size:18px;margin-top:12px;max-width:34em}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+.cards{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:22px;margin-top:46px}
 .card{border-radius:30px;padding:16px 16px 30px;transition:transform .3s}
 .card:hover{transform:translateY(-6px)}
 .card:nth-child(1){background:var(--rose2)}.card:nth-child(2){background:var(--sage)}.card:nth-child(3){background:var(--sand)}
@@ -100,7 +100,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
  <section id="treatments" style="padding-top:20px">
   <h2>Find your <em>treatment</em></h2>
   <p class="sub">From advanced skin care to permanent makeup, we offer a variety of treatments to help you look and feel your best.</p>
-  <div class="cards" style="grid-template-columns:repeat(3,1fr)">
+  <div class="cards" style="--cols:3">
   <div class="card"><img src="cat1.jpg" alt=""><h3>Skin &amp; Body</h3><div class="tags"><span>ProCell Micro-Channeling</span><span>Youthful Treatment</span><span>Hydro-Modeling</span><span>Extraction Facial</span><span>Advanced Peel</span><span>Celluma Light Therapy</span><span>Body Wrap</span></div></div><div class="card"><img src="cat2.jpg" alt=""><h3>Brows &amp; Lashes</h3><div class="tags"><span>Lash Lamination</span><span>Brow Lamination</span><span>Lash and Brow Tinting</span><span>Eyebrow Shaping</span><span>Permanent Makeup</span></div></div><div class="card"><img src="cat3.jpg" alt=""><h3>Specialized Care</h3><div class="tags"><span>Sugaring</span><span>Waxing</span><span>Russian Manicures</span><span>Hyaluronic Acid Filler</span><span>Xeomin</span><span>B12 Injection</span></div></div>
   </div>
  </section>

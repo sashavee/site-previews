@@ -58,7 +58,7 @@ h2 em{color:var(--gold)}
 .press .grid div:last-child{border-right:0}
 .press b{display:block;font-family:"Bodoni Moda",serif;font-weight:400;font-size:40px}
 .press span{color:var(--muted);font-size:14px}
-.loc{display:grid;grid-template-columns:1fr 1fr 1fr;gap:50px;align-items:start}
+.loc{display:grid;grid-template-columns:repeat(var(--cols,3),1fr);gap:50px;align-items:start}
 .loc .card h3{font-family:"Bodoni Moda",serif;font-weight:400;font-size:30px;margin:12px 0 10px}
 .loc .card p{color:var(--muted);font-size:15.5px}
 .loc .card .btn{margin-top:22px}
@@ -121,7 +121,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
  <div class="caps" style="color:var(--gold)">Why clients choose us</div>
  <div class="grid"><div><b>Complimentary</b><span>consultations available</span></div><div><b>Financing</b><span>available</span></div><div><b>Decades</b><span>of aesthetic expertise</span></div></div>
 </div></div>
-<section id="visit"><div class="wrap loc" style="grid-template-columns:1fr 1fr">
+<section id="visit"><div class="wrap loc" style="--cols:2">
  <img src="interior.jpg" alt="">
  <div class="card"><div class="caps" style="color:var(--gold)">Memphis</div><h3>1044 Brookfield Rd.</h3><p>Memphis, TN 38119<br>Mon 9am-5pm · Tue-Thu 9am-6pm · Fri 9am-5pm · Sat 9am-4pm</p><a class="btn" href="tel:+19016831066">(901) 683-1066</a></div>
 </div></section>
